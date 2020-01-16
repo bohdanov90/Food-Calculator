@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Food Calculator</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+  <script src="https://kit.fontawesome.com/19e2f65e12.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+
+  <article class="article">
+
+  <div class="alert-box-max-items alert-box alert-box_hidden">
+    <span class="alert-box-max-items-text alert-box-text">You have reached the maximum amount of items in "My Totals".</span>
+    <span class="alert-box-max-items-close alert-box-close">
+      <button class="alert-box-max-items-close__button alert-box-close__button">&times;</button>
+    </span>
+  </div>
+
+  <div class="alert-box-wrong-query alert-box alert-box_hidden">
+    <span class="alert-box-wrong-query-text alert-box-text">There is no such food item. Please write a correct query.</span>
+    <span class="alert-box-wrong-query-close alert-box-close">
+      <button class="alert-box-wrong-query-close__button alert-box-close__button">&times;</button>
+    </span>
+  </div>
+
+    <header class="header">
+      <h1 class="header-text">Find out how many calories you consume</h1>
+      <form name="header-form" method="get" class="header-form">
+        <div><input class="header-form__input input" type="text" placeholder="Search Food Database"></div>
+        <div class="header-form__icon icon"><i class="fas fa-search fa-1x faa-pulse animated-hover"></i></div>
+      </form>
+    </header>
+
+    <article class="container">
+
+      <section class="container-aside">
+
+        <div class="my-totals">
+          <h2 class="my-totals__text">My Totals:</h2>
+        </div>
+
+        <div class="food-items">
+
+          <div class="food-items__page-1 food-items__page-1-4 food-items__page-1-4_visible food-items__page-1-4_active">
+
+            <div class="food-item-1 food-item-1-20 food-item-1-20_visible">
+              <figure class="food-item-1-picture-container food-item-1-20-picture-container">
+                <img class="food-item-1-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-1-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-1-text-container-title"></div>
+                <div class="food-item-1-text-container-servings">
+                  <span class="food-item-1-text-container-servings__value"></span>
+                  <span class="food-item-1-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-1-text-container-calories">
+                  <span class="food-item-1-text-container-calories__value"></span>
+                  <span class="food-item-1-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-1-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>
+
+            <div class="food-item-2 food-item-1-20 food-item-1-20_visible">
+              <figure class="food-item-2-picture-container food-item-1-20-picture-container">
+                <img class="food-item-2-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-2-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-2-text-container-title"></div>
+                <div class="food-item-2-text-container-servings">
+                  <span class="food-item-2-text-container-servings__value"></span>
+                  <span class="food-item-2-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-2-text-container-calories">
+                  <span class="food-item-2-text-container-calories__value"></span>
+                  <span class="food-item-2-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-2-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>
+
+            <div class="food-item-3 food-item-1-20 food-item-1-20_visible">
+              <figure class="food-item-3-picture-container food-item-1-20-picture-container">
+                <img class="food-item-3-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-3-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-3-text-container-title"></div>
+                <div class="food-item-3-text-container-servings">
+                  <span class="food-item-3-text-container-servings__value"></span>
+                  <span class="food-item-3-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-3-text-container-calories">
+                  <span class="food-item-3-text-container-calories__value"></span>
+                  <span class="food-item-3-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-3-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>
+
+            <div class="food-item-4 food-item-1-20 food-item-1-20_visible">
+              <figure class="food-item-4-picture-container food-item-1-20-picture-container">
+                <img class="food-item-4-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-4-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-4-text-container-title"></div>
+                <div class="food-item-4-text-container-servings">
+                  <span class="food-item-4-text-container-servings__value"></span>
+                  <span class="food-item-4-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-4-text-container-calories">
+                  <span class="food-item-4-text-container-calories__value"></span>
+                  <span class="food-item-4-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-4-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>
+
+            <div class="food-item-5 food-item-1-20 food-item-1-20_visible">
+              <figure class="food-item-5-picture-container food-item-1-20-picture-container">
+                <img class="food-item-5-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-5-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-5-text-container-title"></div>
+                <div class="food-item-5-text-container-servings">
+                  <span class="food-item-5-text-container-servings__value"></span>
+                  <span class="food-item-5-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-5-text-container-calories">
+                  <span class="food-item-5-text-container-calories__value"></span>
+                  <span class="food-item-5-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-5-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>  
+
+          </div>
+
+          <div class="food-items__page-2 food-items__page-1-4 food-items__page-1-4_none">
+
+            <div class="food-item-6 food-item-1-20">
+              <figure class="food-item-6-picture-container food-item-1-20-picture-container">
+                <img class="food-item-6-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-6-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-6-text-container-title"></div>
+                <div class="food-item-6-text-container-servings">
+                  <span class="food-item-6-text-container-servings__value"></span>
+                  <span class="food-item-6-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-6-text-container-calories">
+                  <span class="food-item-6-text-container-calories__value"></span>
+                  <span class="food-item-6-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-6-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div> 
+
+            <div class="food-item-7 food-item-1-20">
+              <figure class="food-item-7-picture-container food-item-1-20-picture-container">
+                <img class="food-item-7-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-7-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-7-text-container-title"></div>
+                <div class="food-item-7-text-container-servings">
+                  <span class="food-item-7-text-container-servings__value"></span>
+                  <span class="food-item-7-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-7-text-container-calories">
+                  <span class="food-item-7-text-container-calories__value"></span>
+                  <span class="food-item-7-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-7-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>
+
+            <div class="food-item-8 food-item-1-20">
+              <figure class="food-item-8-picture-container food-item-1-20-picture-container">
+                <img class="food-item-8-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-8-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-8-text-container-title"></div>
+                <div class="food-item-8-text-container-servings">
+                  <span class="food-item-8-text-container-servings__value"></span>
+                  <span class="food-item-8-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-8-text-container-calories">
+                  <span class="food-item-8-text-container-calories__value"></span>
+                  <span class="food-item-8-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-8-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>
+
+            <div class="food-item-9 food-item-1-20">
+              <figure class="food-item-9-picture-container food-item-1-20-picture-container">
+                <img class="food-item-9-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-9-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-9-text-container-title"></div>
+                <div class="food-item-9-text-container-servings">
+                  <span class="food-item-9-text-container-servings__value"></span>
+                  <span class="food-item-9-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-9-text-container-calories">
+                  <span class="food-item-9-text-container-calories__value"></span>
+                  <span class="food-item-9-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-9-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>
+
+            <div class="food-item-10 food-item-1-20">
+              <figure class="food-item-10-picture-container food-item-1-20-picture-container">
+                <img class="food-item-10-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-10-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-10-text-container-title"></div>
+                <div class="food-item-10-text-container-servings">
+                  <span class="food-item-10-text-container-servings__value"></span>
+                  <span class="food-item-10-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-10-text-container-calories">
+                  <span class="food-item-10-text-container-calories__value"></span>
+                  <span class="food-item-10-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-10-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>  
+
+          </div>
+
+          <div class="food-items__page-3 food-items__page-1-4 food-items__page-1-4_none">
+
+            <div class="food-item-11 food-item-1-20">
+              <figure class="food-item-11-picture-container food-item-1-20-picture-container">
+                <img class="food-item-11-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-11-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-11-text-container-title"></div>
+                <div class="food-item-11-text-container-servings">
+                  <span class="food-item-11-text-container-servings__value"></span>
+                  <span class="food-item-11-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-11-text-container-calories">
+                  <span class="food-item-11-text-container-calories__value"></span>
+                  <span class="food-item-11-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-11-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div> 
+
+            <div class="food-item-12 food-item-1-20">
+              <figure class="food-item-12-picture-container food-item-1-20-picture-container">
+                <img class="food-item-12-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-12-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-12-text-container-title"></div>
+                <div class="food-item-12-text-container-servings">
+                  <span class="food-item-12-text-container-servings__value"></span>
+                  <span class="food-item-12-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-12-text-container-calories">
+                  <span class="food-item-12-text-container-calories__value"></span>
+                  <span class="food-item-12-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-12-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>
+
+            <div class="food-item-13 food-item-1-20">
+              <figure class="food-item-13-picture-container food-item-1-20-picture-container">
+                <img class="food-item-13-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-13-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-13-text-container-title"></div>
+                <div class="food-item-13-text-container-servings">
+                  <span class="food-item-13-text-container-servings__value"></span>
+                  <span class="food-item-13-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-13-text-container-calories">
+                  <span class="food-item-13-text-container-calories__value"></span>
+                  <span class="food-item-13-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-13-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>
+
+            <div class="food-item-14 food-item-1-20">
+              <figure class="food-item-14-picture-container food-item-1-20-picture-container">
+                <img class="food-item-14-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-14-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-14-text-container-title"></div>
+                <div class="food-item-14-text-container-servings">
+                  <span class="food-item-14-text-container-servings__value"></span>
+                  <span class="food-item-14-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-14-text-container-calories">
+                  <span class="food-item-14-text-container-calories__value"></span>
+                  <span class="food-item-14-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-14-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>
+
+            <div class="food-item-15 food-item-1-20">
+              <figure class="food-item-15-picture-container food-item-1-20-picture-container">
+                <img class="food-item-15-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-15-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-15-text-container-title"></div>
+                <div class="food-item-15-text-container-servings">
+                  <span class="food-item-15-text-container-servings__value"></span>
+                  <span class="food-item-15-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-15-text-container-calories">
+                  <span class="food-item-15-text-container-calories__value"></span>
+                  <span class="food-item-15-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-15-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>  
+
+          </div>
+
+          <div class="food-items__page-4 food-items__page-1-4 food-items__page-1-4_none">
+
+            <div class="food-item-16 food-item-1-20">
+              <figure class="food-item-16-picture-container food-item-1-20-picture-container">
+                <img class="food-item-16-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-16-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-16-text-container-title"></div>
+                <div class="food-item-16-text-container-servings">
+                  <span class="food-item-16-text-container-servings__value"></span>
+                  <span class="food-item-16-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-16-text-container-calories">
+                  <span class="food-item-16-text-container-calories__value"></span>
+                  <span class="food-item-16-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-16-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div> 
+
+            <div class="food-item-17 food-item-1-20">
+              <figure class="food-item-17-picture-container food-item-1-20-picture-container">
+                <img class="food-item-17-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-17-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-17-text-container-title"></div>
+                <div class="food-item-17-text-container-servings">
+                  <span class="food-item-17-text-container-servings__value"></span>
+                  <span class="food-item-17-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-17-text-container-calories">
+                  <span class="food-item-17-text-container-calories__value"></span>
+                  <span class="food-item-17-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-17-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>
+
+            <div class="food-item-18 food-item-1-20">
+              <figure class="food-item-18-picture-container food-item-1-20-picture-container">
+                <img class="food-item-18-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-18-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-18-text-container-title"></div>
+                <div class="food-item-18-text-container-servings">
+                  <span class="food-item-18-text-container-servings__value"></span>
+                  <span class="food-item-18-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-18-text-container-calories">
+                  <span class="food-item-18-text-container-calories__value"></span>
+                  <span class="food-item-18-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-18-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>
+
+            <div class="food-item-19 food-item-1-20">
+              <figure class="food-item-19-picture-container food-item-1-20-picture-container">
+                <img class="food-item-19-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-19-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-19-text-container-title"></div>
+                <div class="food-item-19-text-container-servings">
+                  <span class="food-item-19-text-container-servings__value"></span>
+                  <span class="food-item-19-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-19-text-container-calories">
+                  <span class="food-item-19-text-container-calories__value"></span>
+                  <span class="food-item-19-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-19-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div>
+
+            <div class="food-item-20 food-item-1-20">
+              <figure class="food-item-20-picture-container food-item-1-20-picture-container">
+                <img class="food-item-20-picture food-item-1-20-picture food-item-1-20-picture_hidden" src="" alt="">
+              </figure>
+              <div class="food-item-20-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden">
+                <div class="food-item-20-text-container-title"></div>
+                <div class="food-item-20-text-container-servings">
+                  <span class="food-item-20-text-container-servings__value"></span>
+                  <span class="food-item-20-text-container-servings__text"></span>
+                </div>
+                <div class="food-item-20-text-container-calories">
+                  <span class="food-item-20-text-container-calories__value"></span>
+                  <span class="food-item-20-text-container-calories__text">calories</span>
+                </div>
+              </div>
+              <div class="food-item-20-bin food-item-1-20-bin food-item-1-20-bin_hidden">
+                <i class="fas fa-trash fa-2x faa-shake animated-hover faa-slow icon_color"></i>
+              </div>
+            </div> 
+            
+          </div>
+
+          <div class="fake-page food-items__page-5 food-items__page-1-4 food-items__page-1-4_none">
+            <div class="food-item-21 food-item-1-20">
+              <div class="food-item-21-text-container food-item-1-20-text-container food-item-1-20-text-container_hidden"></div>
+            </div> 
+          </div>
+
+        </div>
+
+        <div class="food-pagination">
+          <button class="food-pagination-left-button faa-horizontal faa-slow button">
+            <div class="food-pagination-left-button__value">Page 0</div>
+          </button>
+          <div class="food-pagination-text">
+            <div>Page&nbsp;</div>
+            <div class="food-pagination-text__value">0</div>
+          </div>
+          <button class="food-pagination-right-button faa-horizontal faa-slow button">
+            <div class="food-pagination-right-button__value">Page 0</div>
+          </button>
+        </div>
+
+        <div class="total-calories">
+          <h3 class="total-calories__text">Total Calories:&nbsp;</h3>
+          <h3 class="total-calories__value">0</h3>
+        </div>
+
+      </section>
+      
+      <section class="container-main">
+
+        <div class="details details_hidden">
+
+          <div class="details-first-row">
+
+            <figure class="details-first-row-first-column">
+              <img class="details-first-row-first-column__picture" src="" alt="">
+            </figure>
+
+            <div class="details-first-row-second-column">
+                <h2 class="details-first-row-second-column-title">Apple</h2>
+                <div class="details-first-row-second-column-serving">
+                  <span class="details-first-row-second-column-serving__text">Amount of Servings:&nbsp;</span>
+                  <button class="details-first-row-second-column-serving__minus button">-</button>
+                  <input class="details-first-row-second-column-serving__input input" type="text" readonly pattern="^[0-9]+$" value="1">
+                  <button class="details-first-row-second-column-serving__plus button">+</button>
+                </div>
+                <div class="details-first-row-second-column-add-to-totals">
+                  <button class="details-first-row-second-column-add-to-totals__button button">Add to My Totals</button>
+                </div>
+            </div>
+
+          </div>
+
+          <div class="details-second-row">
+
+            <div class="details-second-row-first-column">
+              <div class="details-second-row-first-column-serving-size">
+                <span>Serving size:</span>
+                <span>&nbsp;</span>
+                <span class="details-second-row-first-column-serving-size__value">1</span>
+                <span>&nbsp;</span>
+                <span class="details-second-row-first-column-serving-size__unit">piece</span>
+              </div>
+              <div class="details-second-row-first-column-calories-amount-in-pieces">
+                <span>Calories (</span>
+                <span class="details-second-row-first-column-calories-amount-in-pieces__servings-value">1</span>
+                <span>&nbsp;</span>
+                <span class="details-second-row-first-column-calories-amount-in-pieces__servings-text">serving</span>
+                <span>):&nbsp;</span>
+                <span class="details-second-row-first-column-calories-amount-in-pieces__value">0</span>
+              </div>
+              <div class="details-second-row-first-column-calories-amount-in-grams">
+                <span>Calories (</span>
+                <span class="details-second-row-first-column-calories-amount-in-grams__grams-value">100</span>
+                <span>&nbsp;gr):&nbsp;</span>
+                <span class="details-second-row-first-column-calories-amount-in-grams__value">0</span>
+              </div>
+            </div>
+            
+            <div class="details-second-row-second-column">
+              <div class="details-second-row-second-column-fat">
+                <span>Fat:&nbsp;</span>
+                <span class="details-second-row-second-column-fat__value">0</span>
+                <span>&nbsp;</span>
+                <span class="details-second-row-second-column-fat__text">grams</span>
+              </div>
+              <div class="details-second-row-second-column-carbohydrates">
+                <span>Carbohydrates:&nbsp;</span>
+                <span class="details-second-row-second-column-carbohydrates__value">0</span>
+                <span>&nbsp;</span>
+                <span class="details-second-row-second-column-carbohydrates__text">grams</span>
+              </div>
+              <div class="details-second-row-second-column-protein">
+                <span>Protein:&nbsp;</span>
+                <span class="details-second-row-second-column-protein__value">0</span>
+                <span>&nbsp;</span>
+                <span class="details-second-row-second-column-protein__text">grams</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </article>
+
+    <footer class="footer">
+      <div class="footer__text-1">Created by Aleksandr Bohdanov</div>
+      <div class="footer__text-2">Powered by Nutritionix</div>
+    </footer>
+
+  </article>
+
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>
