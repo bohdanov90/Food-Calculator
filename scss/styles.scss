@@ -1,115 +1,5 @@
-// ------------------------------------------------------------------------------------------------------------------------------------------- //
-// ----------------------------------------------------------- VARIABLES --------------------------------------------------------------------- //
-// ------------------------------------------------------------------------------------------------------------------------------------------- //
+@import "mixins";
 
-
-//------------------- Width -------------------//
-
-$article-width: 100vw;
-  $header-width: 1;
-    $header-form__input-width: 0.25;
-    $header-form__icon-width: 0.03;
-  $container-width: 1;
-    $container-aside-width: 0.3;
-      $container-aside-children-width: 0.9;
-      $my-totals-width: 0.9;
-      $food-items-width: 0.9;
-        $food-item-1-20-picture-container-width: 0.2;
-        $food-item-1-20-text-container-width: 0.65;     
-        $food-item-1-20-bin-width: 0.15;
-      $food-pagination-width: 0.9;
-        $food-pagination-left-button-width: 0.25;
-        $food-pagination-text-width: 0.5;
-        $food-pagination-right-button-width: 0.25;
-      $total-calories-width: 0.9;
-    $container-main-width: 0.7;
-      $details-width: 1;
-        $details-first-row-width: 0.9;
-          $first-row-first-column-width: 0.45;
-          $first-row-second-column-width: 0.55;
-        $details-second-row-width: 0.9;
-          $second-row-first-column-width: 0.6;
-          $second-row-second-column-width: 0.4;
-  $footer-width: 1;
-
-//------------------- Height -------------------//
-
-$article-height: 100vh;
-  $header-height: 0.2;
-    $header-text-height: 0.5;
-    $header-form-height: 0.5;
-  $container-height: 0.7;
-    $container-aside-height: 1;
-      $my-totals-height: 0.1;
-      $food-items-height: 0.7;
-        $food-item-height: 1/5;
-      $food-pagination-height: 0.1;
-      $total-calories-height: 0.1;
-    $container-main-height: 1;
-      $details-height: 1;
-        $details-first-row-height: 0.6;
-          $details-first-row-second-column-children-height: 1/3;
-        $details-second-row-height: 0.3;  
-  $footer-height: 0.1;
-
-//------------------- Margins -------------------//  
-
-$margin-height: 0.25vh;
-
-//------------------- Borders -------------------//  
-
-$border-width-1-vh: 0.15vh;
-$border-width-1-vw: 0.15vw;
-$border-width-2-vh: 0.25vh;
-$border-width-2-vw: 0.25vw;
-
-//------------------- Colors -------------------//
-
-$bg-color: #d4b796;
-$first-color: black;
-$second-color: #FFFFFF;
-$third-color: rgb(102, 141, 94);
-$alert-color: #FFAA2B;
-
-
-// ------------------------------------------------------------------------------------------------------------------------------------------- //
-// ------------------------------------------------------------ MIXINS ----------------------------------------------------------------------- //
-// ------------------------------------------------------------------------------------------------------------------------------------------- //
-
-
-@mixin flex-column() {
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin flex-row() {
-  display: flex;
-  flex-direction: row;
-}
-
-@mixin flex-centered() {
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin flex-horiz-space-between() {
-  justify-content: space-between;
-  align-items: center;
-}
-
-@mixin flex-horiz-start() {
-  justify-content: start;
-  align-items: center;
-}
-
-@mixin box-shadow() {
-  box-shadow: 0 4px 10px 2px rgba($first-color, 0.2);
-}
-
-
-// ------------------------------------------------------------------------------------------------------------------------------------------- //
-// -------------------------------------------------------------- CSS ------------------------------------------------------------------------ //
-// ------------------------------------------------------------------------------------------------------------------------------------------- //
 
 //------------------------------ Visible, Hidden, None, Active -----------------------------//
 
@@ -152,36 +42,20 @@ $alert-color: #FFAA2B;
 .alert-box {
   @include flex-row();
   @include flex-horiz-space-between();
-  background-color: $alert-color;
-  border-radius: 0.5vw;
+  @include font-bold();
   cursor: default;
-  font-weight: 900;
-  height: 10vh;
   position: absolute;
-  width: 50vw;
 }
-
-  .alert-box-text {
-    color: $third-color;
-    font-size: 1.5vw;
-    padding-left: 2vw;
-  }
 
   .alert-box-close {
     @include flex-row();
     @include flex-centered();
-    height: 10vh;
     position: relative;
-    width: 5vw;
   }
 
     .alert-box-close__button {   
-      background-color: $alert-color;
       border: none;
       cursor: pointer;    
-      font-size: 3vw;
-      height: 100%;
-      padding-bottom: 1vh;
       position: absolute;
     }
 
@@ -199,40 +73,14 @@ figure {
   margin: 0;
 }
 
-h1 {
-  font-size: 4vw;
-}
-
-h2 {
-  font-size: 2.5vw;
-}
-
-h3 {
-  font-size: 1.5vw;
-}
-
 .button,
 .input {
   @include box-shadow();
-  background-color: $third-color;
-  border: $border-width-1-vw solid $first-color;
-  border-radius: 0.25vw;
 }
 
 .button {
   cursor: pointer;
 }
-
-.input {
-  background-color: $second-color;
-  color: $first-color;
-}
-
-  .button:hover {
-    background-color: $second-color;
-    border: $border-width-1-vw solid $third-color;
-    color: $third-color;
-  }
 
   .button:active {
     transform:translateY(2px);
@@ -240,313 +88,186 @@ h3 {
 
 .icon {
   @include box-shadow();
-  background-color: $second-color;
-  border: $border-width-2-vh solid $first-color;
-  border-radius: 0.25vw;
-  color: $first-color;
   cursor: pointer;
 }
-
-  .icon_color {
-    color: $third-color;
-  }
 
 //------------------------------------------ Main Layout ----------------------------------------//
 
 body {
   @include flex-row();
   @include flex-centered();
-  font: {
-    family: 'Caveat', cursive;
-    size: 18px;
-  }
+  font-family: 'Caveat', cursive;
 }
 
 .article {
   @include flex-column();
   @include flex-centered(); 
-  color: $first-color;
-  height: $article-height;
   position: relative;
-  width: $article-width;
 }
 
   .header {
     @include flex-column();
     @include flex-centered();
-    background-color: $bg-color;
-    background-size: auto $article-width * $header-width;
-    border-bottom: $border-width-2-vw solid $second-color;
-    height: $article-height * $header-height;
-    width: $article-width * $header-width;
   }
 
     .header-text {
       @include flex-row();
       @include flex-centered();
-      font-weight: 900;
-      height: $article-height * $header-height * $header-text-height;
-      width: $article-width * $header-width;
+      @include font-bold();
     }
 
     .header-form {
       @include flex-row();
       @include flex-centered();
-      height: $article-height * $header-height * $header-form-height;
       text-align: center;
-      width: $article-width * $header-width;
     }
 
       .header-form__input {
-        color: $third-color;
-        font-size: 1.5vw;
-        height: 6vh;
         outline: none;
-        padding: 0 0 0 1vw;
-        width: $article-width * $header-width * $header-form__input-width;
       }
 
       .header-form__icon {
         @include flex-row();
         @include flex-centered();
-        color: $third-color;
-        height: 6vh;
-        width: $article-width * $header-width * $header-form__icon-width;
       }
   
   .container {
-    @include flex-row();
-    @include flex-centered();
-    background-color: $bg-color;
-    height: $article-height * $container-height;
-    width: $article-width * $container-width;
+
   }
 
     .container-aside {
       @include flex-column();
       @include flex-centered();
-      border-right: $border-width-2-vw solid $second-color;
-      height: $article-height * $container-height * $container-aside-height;
-      width: $article-width * $container-width * $container-aside-width;
     }
 
       .my-totals {
         @include flex-row();
         @include flex-centered();
-        height: $article-height * $container-height * $container-aside-height * $my-totals-height;
-        width: $article-width * $container-width * $container-aside-width * $my-totals-width;
       }
-
-        .my-totals__text {
-          font-size: 2.5vw;
-        }
 
       .food-items {
         @include flex-column();
         @include flex-centered();
-        height: $article-height * $container-height * $container-aside-height * $food-items-height;
-        width: $article-width * $container-width * $container-aside-width * $food-items-width;  
       }
 
         .food-items__page-1-4 {
-          height: $article-height * $container-height * $container-aside-height * $food-items-height;
-          width: $article-width * $container-width * $container-aside-width * $food-items-width;
         }
 
           .food-item-1-20 {
             @include flex-row();
             @include flex-centered();
-            background-color: $second-color;
-            height: $article-height * $container-height * $container-aside-height * $food-items-height * 
-                    $food-item-height - ($margin-height * 2);
-            margin: $margin-height 0;
-            width: $article-width * $container-width * $container-aside-width * $food-items-width;
           }
 
             .food-item-1-20-picture-container {
               @include flex-row();
               @include flex-centered();
-              height: $article-height * $container-height * $container-aside-height * $food-items-height * 
-                      $food-item-height - ($margin-height * 2);
-              width: $article-width * $container-width * $container-aside-width * $food-items-width * $food-item-1-20-picture-container-width;
             }
-
-              .food-item-1-20-picture {
-                height: 100%;
-                width: auto;
-                max-width: 100%;
-              }
 
             .food-item-1-20-text-container  {
               @include flex-column();
               @include flex-centered();
-              height: $article-height * $container-height * $container-aside-height * $food-items-height * 
-                      $food-item-height - ($margin-height * 2);
-              width: $article-width * $container-width * $container-aside-width * $food-items-width * $food-item-1-20-text-container-width;
             }
 
             .food-item-1-20-bin  {
               @include flex-row();
               @include flex-centered();
               cursor: pointer;
-              height: $article-height * $container-height * $container-aside-height * $food-items-height * 
-                      $food-item-height - ($margin-height * 2);
-              width: $article-width * $container-width * $container-aside-width * $food-items-width * $food-item-1-20-bin-width;
             }
 
       .food-pagination {
         @include flex-row();
         @include flex-centered();
-        height: $article-height * $container-height * $container-aside-height * $food-pagination-height;
-        width: $article-width * $container-width * $container-aside-width * $food-pagination-width;
       }
 
         .food-pagination-left-button {
-          @include box-shadow();
           @include flex-row();
           @include flex-centered();
-          width: $article-width * $container-width * $container-aside-width * $food-pagination-width * $food-pagination-left-button-width;
         }
         
         .food-pagination-text {
           @include flex-row();
           @include flex-centered();
-          width: $article-width * $container-width * $container-aside-width * $food-pagination-width * $food-pagination-text-width;
         }
 
         .food-pagination-right-button {
           @include flex-row();
           @include flex-centered();
-          width: $article-width * $container-width * $container-aside-width * $food-pagination-width * $food-pagination-right-button-width;
         }
 
       .total-calories {
         @include flex-row();
         @include flex-centered();
-        height: $article-height * $container-height * $container-aside-height * $total-calories-height;
-        width: $article-width * $container-width * $container-aside-width * $total-calories-width;
       }
 
         .total-calories__text,
         .total-calories__value {
-          font-size: 2vw;
           text-decoration: underline;
         }
 
     .container-main {
       @include flex-column();
       @include flex-centered();      
-      height: $article-height * $container-height * $container-main-height;
-      width: $article-width * $container-width * $container-main-width;
     }
 
       .details {
         @include flex-column();
         @include flex-centered();
-        height: $article-height * $container-height * $container-main-height * $details-height;
-        width: $article-width * $container-width * $container-main-width * $details-width;
       }
 
         .details-first-row {
           @include flex-row();
           @include flex-centered();
-          height: $article-height * $container-height * $container-main-height * $details-height * $details-first-row-height;
-          width: $article-width * $container-width * $container-main-width * $details-width * $details-first-row-width;
         }
 
           .details-first-row-first-column {
             @include flex-row();
             @include flex-centered();
-            background-color: $second-color;
-            border: $border-width-1-vw solid $first-color;
-            height: $article-height * $container-height * $container-main-height * $details-height * $details-first-row-height;
-            width: $article-width * $container-width * $container-main-width * $details-width * 
-                    $details-first-row-width * $first-row-first-column-width;
           }
-        
-            .details-first-row-first-column__picture {
-              height: 90%;
-              max-width: 90%;
-              width: auto;
-            }
 
           .details-first-row-second-column {
             @include flex-column();
             @include flex-centered();
-            height: $article-height * $container-height * $container-main-height * $details-height * $details-first-row-height;
-            width: $article-width * $container-width * $container-main-width * $details-width * 
-                    $details-first-row-width * $first-row-second-column-width;
           }
 
             .details-first-row-second-column-title {
               @include flex-row();
               @include flex-centered();
-              height: $article-height * $container-height * $container-main-height * $details-height * $details-first-row-height * 
-                      $details-first-row-second-column-children-height;
-              width: $article-width * $container-width * $container-main-width * $details-width * 
-                      $details-first-row-width * $first-row-second-column-width;
             }
 
             .details-first-row-second-column-serving {
-              @include flex-row();
+              @include flex-column();
               @include flex-centered();
-              font-size: 2vw;
-              height: $article-height * $container-height * $container-main-height * $details-height * $details-first-row-height * 
-                      $details-first-row-second-column-children-height;
-              width: $article-width * $container-width * $container-main-width * $details-width * 
-                      $details-first-row-width * $first-row-second-column-width;
             }
 
-              .details-first-row-second-column-serving__minus,
-              .details-first-row-second-column-serving__plus {
-                padding: 0;
-                text-align: center;
-                width: 2vw;
+              .details-first-row-second-column-serving-buttons {
+                @include flex-row();
+                @include flex-centered();
               }
 
-              .details-first-row-second-column-serving__input { 
-                cursor: default;
-                padding: 0;
-                text-align: center;
-                width: 2vw;
-              }
+                .details-first-row-second-column-serving-buttons__minus,
+                .details-first-row-second-column-serving-buttons__plus {
+                  text-align: center;
+                }
+
+                .details-first-row-second-column-serving-buttons__input { 
+                  cursor: default;
+                  text-align: center;
+                }
 
             .details-first-row-second-column-add-to-totals {
               @include flex-row();
               @include flex-centered();
-              height: $article-height * $container-height * $container-main-height * $details-height * $details-first-row-height * 
-                      $details-first-row-second-column-children-height;
-              width: $article-width * $container-width * $container-main-width * $details-width * 
-                      $details-first-row-width * $first-row-second-column-width;
             }
-
-              .details-first-row-second-column-add-to-totals__button {
-                font-size: 1.75vw;
-                height: 50%;
-                width: 50%;
-              }
 
         .details-second-row {
           @include flex-row();
           @include flex-centered(); 
-          height: $article-height * $container-height * $container-main-height * $details-height * $details-second-row-height;
-          width: $article-width * $container-width * $container-main-width * $details-width * $details-second-row-width;
         }
 
           .details-second-row-first-column,
           .details-second-row-second-column {
             @include flex-column();
             @include flex-centered();
-          }
-
-          .details-second-row-first-column {
-            width: $article-width * $container-width * $container-main-width * $details-width * 
-                    $details-second-row-width * $second-row-first-column-width;
-          }
-
-          .details-second-row-second-column {
-            width: $article-width * $container-width * $container-main-width * $details-width * 
-                    $details-second-row-width * $second-row-second-column-width;
           }
 
             .details-second-row-first-column-serving-size,
@@ -557,10 +278,8 @@ body {
             .details-second-row-second-column-protein {
               @include flex-row();
               @include flex-horiz-start();
-              font-size: 1.5vw;
               overflow: hidden; // cutting out redundand text
               white-space: nowrap; // canceling text wrap
-              width: 100%;
             }
 
               .details-second-row-first-column-serving-size__value,
@@ -569,24 +288,26 @@ body {
               .details-second-row-second-column-fat__value,
               .details-second-row-second-column-carbohydrates__value,
               .details-second-row-second-column-protein__value {
-                font-weight: 900;
+                @include font-bold();
               }
 
   .footer {
     @include flex-row();
     @include flex-horiz-space-between();
-    background-color: $bg-color;
-    border-top: $border-width-2-vw solid $second-color;
-    height: $article-height * $footer-height;
-    width: $article-width * $footer-width;
   }
 
-    .footer__text-1 {
-      font-size: 1.5vw;
-      padding-left: 2vw;
-    }
+//------------------------------------------ Importing Adaptive Layout ----------------------------------------//
 
-    .footer__text-2 {
-      font-size: 1.5vw;
-      padding-right: 2vw;
-    }
+@import "laptop";
+@import "mobile";
+
+
+
+
+
+
+
+
+
+
+

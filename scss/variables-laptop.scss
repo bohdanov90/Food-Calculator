@@ -1,0 +1,106 @@
+// ------------------------------------------------------------------------------------------------------------------------------------------- //
+// ------------------------------------------------------- LAPTOP VARIABLES ------------------------------------------------------------------ //
+// ------------------------------------------------------------------------------------------------------------------------------------------- //
+
+
+//------------------- Width -------------------//
+
+$alert-box-width: 50vw;
+$alert-box-close-width: 5vw;
+
+$article-width: 100vw;
+  $header-width: 1;
+    $header-form__input-width: 0.25;
+    $header-form__icon-width: 0.05;
+  $container-width: 1;
+    $container-aside-width: 0.3;
+      $my-totals-width: 0.9;
+      $food-items-width: 0.9;
+        $food-item-1-20-picture-container-width: 0.2;
+        $food-item-1-20-text-container-width: 0.65;     
+        $food-item-1-20-bin-width: 0.15;
+      $food-pagination-width: 0.9;
+        $food-pagination-left-button-width: 0.25;
+        $food-pagination-text-width: 0.5;
+        $food-pagination-right-button-width: 0.25;
+      $total-calories-width: 0.9;
+    $container-main-width: 0.7;
+      $details-width: 1;
+        $details-first-row-width: 0.9;
+          $first-row-first-column-width: 0.45;
+          $first-row-second-column-width: 0.55;
+            $first-row-second-column-serving-children-width: 0.07;
+        $details-second-row-width: 0.9;
+          $second-row-first-column-width: 0.6;
+          $second-row-second-column-width: 0.4;
+  $footer-width: 1;
+
+//------------------- Height -------------------//
+
+$alert-box-height: 10vh;
+$alert-box-close-height: 10vh;
+
+$article-height: 100vh;
+  $header-height: 0.2;
+    $header-text-height: 0.5;
+    $header-form-height: 0.5;
+      $header-form-input-height: 0.6;
+      $header-form-icon-height: 0.6;
+  $container-height: 0.7;
+    $container-aside-height: 1;
+      $my-totals-height: 0.1;
+      $food-items-height: 0.7;
+        $food-item-height: 1/5;
+      $food-pagination-height: 0.1;
+      $total-calories-height: 0.1;
+    $container-main-height: 1;
+      $details-height: 1;
+        $details-first-row-height: 0.6;
+          $details-first-row-second-column-children-height: 1/3;
+        $details-second-row-height: 0.3;  
+  $footer-height: 0.1;
+
+//------------------- Font Size -------------------// 
+
+$alert-box-text-font-size: 2vw;
+$alert-box-close-button-font-size: 4vw;
+$h1-font-size: 3.5vw;
+$h2-font-size: 3.5vw;
+$h3-font-size: 1.25vw;
+$body-font-size: 18px;
+$header-form-input-font-size: 2.5vw;
+$my-totals-text-font-size: 2.25vw;
+$food-pagination-font-size: 1.75vw;
+$total-calories-children-font-size: 2.5vw;
+$details-first-row-second-column-serving-font-size: 2.75vw;
+$details-first-row-second-column-add-to-totals-button-font-size: 2.25vw;
+$details-second-row-children-font-size: 2.25vw;
+$footer-text-font-size: 1.75vw;
+
+//------------- Margins and Paddings -------------//  
+
+$margin-height: 0.25vh;
+
+$alert-box-text-padding-left: 2vw;
+$alert-box-close-button-padding-bottom: 1vh;
+$header-form-input-padding: 0 0 0 1vw;
+$details-first-row-second-column-serving-buttons-padding-top: 1vh;
+$footer-padding-left-right: 2vw;
+
+//------------------- Borders -------------------//  
+
+$border-width-1-vw: 0.15vw;
+$border-width-2-vh: 0.25vh;
+$border-width-2-vw: 0.25vw;
+
+$alert-box-border-radius: 0.5vw;
+$button-input-border-radius: 0.25vw;
+$icon-border-radius: 0.25vw;
+
+//------------------- Colors -------------------//
+
+$bg-color: #d4b796;
+$first-color: black;
+$second-color: #FFFFFF;
+$third-color: rgb(102, 141, 94);
+$alert-color: #FFAA2B;

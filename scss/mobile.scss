@@ -1,0 +1,350 @@
+@import "variables-mobile";
+@import "mixins";
+
+
+//////////////////////////////////////////////////////// for mobile phones ///////////////////////////////////////////////////////////////////
+
+@media only screen and (max-width: 768px) {
+
+//------------------------------------------ Alert Boxes ----------------------------------------//
+
+.alert-box {
+  background-color: $alert-mobile-color;
+
+  border-radius: $alert-box-border-mobile-radius;
+
+  height: $alert-box-mobile-height;
+
+  width: $alert-box-mobile-width;
+}
+
+  .alert-box-text {
+    color: $third-mobile-color;
+    font-size: $alert-box-text-mobile-font-size;
+    padding-left: $alert-box-text-mobile-padding-left;
+  }
+
+  .alert-box-close {
+
+    height: $alert-box-close-mobile-height;
+
+    width: $alert-box-close-mobile-width;
+  }
+
+    .alert-box-close__button {   
+      background-color: $alert-mobile-color;
+  
+      font-size: $alert-box-close-button-mobile-font-size;
+      height: 100%;
+      padding-bottom: $alert-box-close-button-mobile-padding-bottom;
+
+    }
+
+//------------------------------------------ Global Settings ----------------------------------------//
+
+h1 {
+  font-size: $h1-mobile-font-size;
+}
+
+h2 {
+  font-size: $h2-mobile-font-size;
+}
+
+h3 {
+  font-size: $h3-mobile-font-size;
+}
+
+.button,
+.input {
+  background-color: $third-mobile-color;
+  border: $border-mobile-width-1-vw solid $first-mobile-color;
+  border-radius: $button-input-border-mobile-radius;
+}
+
+.input {
+  background-color: $second-mobile-color;
+  color: $first-mobile-color;
+}
+
+  .button:hover {
+    background-color: $second-mobile-color;
+    border: $border-mobile-width-1-vw solid $third-mobile-color;
+    color: $third-mobile-color;
+  }
+
+.icon {
+  background-color: $second-mobile-color;
+  border: $border-mobile-width-2-vh solid $first-mobile-color;
+  border-radius: $icon-border-mobile-radius;
+  color: $first-mobile-color;
+}
+
+  .icon_color {
+    color: $third-mobile-color;
+  }
+
+//------------------------------------------ Main Layout ----------------------------------------//
+
+body {
+  font-size: $body-mobile-font-size;
+}
+
+  .article {
+
+    height: $article-mobile-height;
+    width: $article-mobile-width;
+    color: $first-mobile-color;
+  }
+
+    .header {
+
+      height: $article-mobile-height * $header-mobile-height;
+      width: $article-mobile-width * $header-mobile-width;
+
+      background-color: $bg-mobile-color;
+      background-size: auto $article-mobile-width * $header-mobile-width;
+      border-bottom: $border-mobile-width-2-vw solid $second-mobile-color;
+
+    }
+
+      .header-text {
+        height: $article-mobile-height * $header-mobile-height * $header-text-mobile-height;
+        width: $article-mobile-width * $header-mobile-width;
+      }
+
+      .header-form {
+        height: $article-mobile-height * $header-mobile-height * $header-form-mobile-height;
+        width: $article-mobile-width * $header-mobile-width;
+      }
+
+        .header-form__input {
+
+          height: $article-mobile-height * $header-mobile-height * $header-form-mobile-height * $header-form-input-mobile-height;
+
+          width: $article-mobile-width * $header-mobile-width * $header-form__input-mobile-width;
+
+
+
+          color: $third-mobile-color;
+          font-size: $header-form-input-mobile-font-size;
+          padding: $header-form-input-mobile-padding;
+        
+        }
+
+        .header-form__icon {
+          color: $third-mobile-color;
+          height: $article-mobile-height * $header-mobile-height * $header-form-mobile-height * $header-form-icon-mobile-height;
+          width: $article-mobile-width * $header-mobile-width * $header-form__icon-mobile-width;
+        }
+
+    .container {
+      @include flex-column();
+      @include flex-centered();
+      background-color: $bg-mobile-color;
+      height: $article-mobile-height * $container-mobile-height;
+      width: $article-mobile-width * $container-mobile-width;
+    }
+
+      .container-aside {
+        border-right: $border-mobile-width-2-vw solid $second-mobile-color;
+        height: $article-mobile-height * $container-mobile-height * $container-aside-mobile-height;
+        width: $article-mobile-width * $container-mobile-width * $container-aside-mobile-width;
+        order: 2;
+      }
+
+        .my-totals {
+          
+          height: $article-mobile-height * $container-mobile-height * $container-aside-mobile-height * $my-totals-mobile-height;
+          width: $article-mobile-width * $container-mobile-width * $container-aside-mobile-width * $my-totals-mobile-width;
+        }
+
+          .my-totals__text {
+            font-size: $my-totals-text-mobile-font-size;
+          }
+
+        .food-items {
+    
+          height: $article-mobile-height * $container-mobile-height * $container-aside-mobile-height * $food-items-mobile-height;
+          width: $article-mobile-width * $container-mobile-width * $container-aside-mobile-width * $food-items-mobile-width;
+        }
+
+          .food-items__page-1-4 {
+            height: $article-mobile-height * $container-mobile-height * $container-aside-mobile-height * $food-items-mobile-height;
+            width: $article-mobile-width * $container-mobile-width * $container-aside-mobile-width * $food-items-mobile-width;
+          }
+
+            .food-item-1-20 {
+              height: $article-mobile-height * $container-mobile-height * $container-aside-mobile-height * $food-items-mobile-height * $food-item-mobile-height - ($margin-mobile-height * 2);
+              margin: $margin-mobile-height 0;
+              width: $article-mobile-width * $container-mobile-width * $container-aside-mobile-width * $food-items-mobile-width;
+              
+              background-color: $second-mobile-color;
+              margin: $margin-mobile-height 0;
+            }
+
+              .food-item-1-20-picture-container {
+                height: $article-mobile-height * $container-mobile-height * $container-aside-mobile-height * $food-items-mobile-height * $food-item-mobile-height - ($margin-mobile-height * 2);
+                width: $article-mobile-width * $container-mobile-width * $container-aside-mobile-width * $food-items-mobile-width * $food-item-1-20-picture-container-mobile-width;
+          
+              }
+
+                .food-item-1-20-picture {
+                  height: 100%;
+                  width: auto;
+                  max-width: 100%;
+                }
+
+              .food-item-1-20-text-container  {
+                height: $article-mobile-height * $container-mobile-height * $container-aside-mobile-height * $food-items-mobile-height * $food-item-mobile-height - ($margin-mobile-height * 2);
+                width: $article-mobile-width * $container-mobile-width * $container-aside-mobile-width * $food-items-mobile-width * $food-item-1-20-text-container-mobile-width;
+        
+              }
+
+              .food-item-1-20-bin  {
+                height: $article-mobile-height * $container-mobile-height * $container-aside-mobile-height * $food-items-mobile-height * $food-item-mobile-height - ($margin-mobile-height * 2);
+                width: $article-mobile-width * $container-mobile-width * $container-aside-mobile-width * $food-items-mobile-width * $food-item-1-20-bin-mobile-width;
+            
+              }
+
+        .food-pagination {
+          height: $article-mobile-height * $container-mobile-height * $container-aside-mobile-height * $food-pagination-mobile-height;
+          width: $article-mobile-width * $container-mobile-width * $container-aside-mobile-width * $food-pagination-mobile-width;
+          font-size: $food-pagination-mobile-font-size;
+        }
+
+          .food-pagination-left-button {
+          
+            width: $article-mobile-width * $container-mobile-width * $container-aside-mobile-width * $food-pagination-mobile-width * $food-pagination-left-button-mobile-width;
+          }
+          
+          .food-pagination-text {
+            width: $article-mobile-width * $container-mobile-width * $container-aside-mobile-width * $food-pagination-mobile-width * $food-pagination-text-mobile-width;
+    
+          }
+
+          .food-pagination-right-button {
+            width: $article-mobile-width * $container-mobile-width * $container-aside-mobile-width * $food-pagination-mobile-width * $food-pagination-right-button-mobile-width;
+            
+          }
+
+        .total-calories {
+          height: $article-mobile-height * $container-mobile-height * $container-aside-mobile-height * $total-calories-mobile-height;
+          width: $article-mobile-width * $container-mobile-width * $container-aside-mobile-width * $total-calories-mobile-width;
+        
+        }
+
+          .total-calories__text,
+          .total-calories__value {
+            font-size: $total-calories-children-mobile-font-size;
+          }
+
+      .container-main {
+    
+        height: $article-mobile-height * $container-mobile-height * $container-main-mobile-height;
+        width: $article-mobile-width * $container-mobile-width * $container-main-mobile-width;
+        order: 1;
+      }
+
+        .details {
+          height: $article-mobile-height * $container-mobile-height * $container-main-mobile-height * $details-mobile-height;
+          width: $article-mobile-width * $container-mobile-width * $container-main-mobile-width * $details-mobile-width;
+        }
+
+          .details-first-row {
+            
+            height: $article-mobile-height * $container-mobile-height * $container-main-mobile-height * $details-mobile-height * $details-first-row-mobile-height;
+            width: $article-mobile-width * $container-mobile-width * $container-main-mobile-width * $details-mobile-width * $details-first-row-mobile-width;
+          }
+
+            .details-first-row-first-column {
+              height: $article-mobile-height * $container-mobile-height * $container-main-mobile-height * $details-mobile-height * $details-first-row-mobile-height;
+              width: $article-mobile-width * $container-mobile-width * $container-main-mobile-width * $details-mobile-width * $details-first-row-mobile-width * $first-row-first-column-mobile-width;
+              
+              background-color: $second-mobile-color;
+              border: $border-mobile-width-1-vw solid $first-mobile-color;
+            }
+          
+              .details-first-row-first-column__picture {
+                height: 90%;
+                max-width: 90%;
+                width: auto;
+              }
+
+            .details-first-row-second-column {
+              height: $article-mobile-height * $container-mobile-height * $container-main-mobile-height * $details-mobile-height * $details-first-row-mobile-height;
+              width: $article-mobile-width * $container-mobile-width * $container-main-mobile-width * $details-mobile-width * $details-first-row-mobile-width * $first-row-second-column-mobile-width;
+            }
+
+              .details-first-row-second-column-title {
+                height: $article-mobile-height * $container-mobile-height * $container-main-mobile-height * $details-mobile-height * $details-first-row-mobile-height * $details-first-row-second-column-children-mobile-height;
+                width: $article-mobile-width * $container-mobile-width * $container-main-mobile-width * $details-mobile-width * $details-first-row-mobile-width * $first-row-second-column-mobile-width;
+              }
+
+              .details-first-row-second-column-serving {
+                height: $article-mobile-height * $container-mobile-height * $container-main-mobile-height * $details-mobile-height * $details-first-row-mobile-height * $details-first-row-second-column-children-mobile-height;
+                width: $article-mobile-width * $container-mobile-width * $container-main-mobile-width * $details-mobile-width * $details-first-row-mobile-width * $first-row-second-column-mobile-width;
+                font-size: $details-first-row-second-column-serving-mobile-font-size;
+              }
+
+                .details-first-row-second-column-serving-buttons {
+                  padding-top: $details-first-row-second-column-serving-buttons-mobile-padding-top;
+                }
+
+                  .details-first-row-second-column-serving-buttons__minus,
+                  .details-first-row-second-column-serving-buttons__plus,
+                  .details-first-row-second-column-serving-buttons__input {
+                    width: $article-mobile-width * $container-mobile-width * $container-main-mobile-width * $details-mobile-width * $details-first-row-mobile-width * $first-row-second-column-mobile-width * $first-row-second-column-serving-children-mobile-width;
+                  }
+
+              .details-first-row-second-column-add-to-totals {
+                height: $article-mobile-height * $container-mobile-height * $container-main-mobile-height * $details-mobile-height * $details-first-row-mobile-height * $details-first-row-second-column-children-mobile-height;
+                width: $article-mobile-width * $container-mobile-width * $container-main-mobile-width * $details-mobile-width * $details-first-row-mobile-width * $first-row-second-column-mobile-width;
+              }
+
+                .details-first-row-second-column-add-to-totals__button {
+                  font-size: $details-first-row-second-column-add-to-totals-button-mobile-font-size;
+                  height: 50%;
+                  width: 75%;
+                }
+
+          .details-second-row {
+            height: $article-mobile-height * $container-mobile-height * $container-main-mobile-height * $details-mobile-height * $details-second-row-mobile-height;
+            width: $article-mobile-width * $container-mobile-width * $container-main-mobile-width * $details-mobile-width * $details-second-row-mobile-width;
+          }
+
+            .details-second-row-first-column {
+              width: $article-mobile-width * $container-mobile-width * $container-main-mobile-width * $details-mobile-width * $details-second-row-mobile-width * $second-row-first-column-mobile-width;
+            }
+
+            .details-second-row-second-column {
+              width: $article-mobile-width * $container-mobile-width * $container-main-mobile-width * $details-mobile-width * $details-second-row-mobile-width * $second-row-second-column-mobile-width;
+            }
+
+              .details-second-row-first-column-serving-size,
+              .details-second-row-first-column-calories-amount-in-pieces,
+              .details-second-row-first-column-calories-amount-in-grams,
+              .details-second-row-second-column-fat,
+              .details-second-row-second-column-carbohydrates,
+              .details-second-row-second-column-protein {
+                font-size: $details-second-row-children-mobile-font-size;
+                width: 100%;
+              }
+
+    .footer {
+      height: $article-mobile-height * $footer-mobile-height;
+      width: $article-mobile-width * $footer-mobile-width;
+      background-color: $bg-mobile-color;
+      border-top: $border-mobile-width-2-vw solid $second-mobile-color;
+    }
+
+    .footer__text-1 {
+      font-size: $footer-text-mobile-font-size;
+      padding-left: $footer-mobile-padding-left-right;
+    }
+
+    .footer__text-2 {
+      font-size: $footer-text-mobile-font-size;
+      padding-right: $footer-mobile-padding-left-right;
+    }
+
+}

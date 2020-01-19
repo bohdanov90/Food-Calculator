@@ -1,0 +1,106 @@
+// ------------------------------------------------------------------------------------------------------------------------------------------- //
+// ------------------------------------------------------- MOBILE VARIABLES ------------------------------------------------------------------ //
+// ------------------------------------------------------------------------------------------------------------------------------------------- //
+
+
+//------------------- Width -------------------//
+
+$alert-box-mobile-width: 75vw;
+$alert-box-close-mobile-width: 5vw;
+
+$article-mobile-width: 100vw;
+  $header-mobile-width: 1;
+    $header-form__input-mobile-width: 0.5;
+    $header-form__icon-mobile-width: 0.08;
+  $container-mobile-width: 1; 
+    $container-aside-mobile-width: 1;
+      $my-totals-mobile-width: 0.8;
+      $food-items-mobile-width: 0.8; //80vw;
+        $food-item-1-20-picture-container-mobile-width: 0.2;
+        $food-item-1-20-text-container-mobile-width: 0.65;     
+        $food-item-1-20-bin-mobile-width: 0.15;
+      $food-pagination-mobile-width: 0.8; //80vw;
+        $food-pagination-left-button-mobile-width: 0.25;
+        $food-pagination-text-mobile-width: 0.5;
+        $food-pagination-right-button-mobile-width: 0.25;
+      $total-calories-mobile-width: 0.8;
+    $container-main-mobile-width: 1; //100vw;
+      $details-mobile-width: 1;
+        $details-first-row-mobile-width: 0.95; //90vw;
+          $first-row-first-column-mobile-width: 0.6;
+          $first-row-second-column-mobile-width: 0.4;
+            $first-row-second-column-serving-children-mobile-width: 0.2;
+        $details-second-row-mobile-width: 0.95; //90vw;
+          $second-row-first-column-mobile-width: 0.6;
+          $second-row-second-column-mobile-width: 0.4;
+  $footer-mobile-width: 1; //100vw;
+
+//------------------- Height -------------------//
+
+$alert-box-mobile-height: 10vh;
+$alert-box-close-mobile-height: 10vh;
+
+$article-mobile-height: 200vh;
+  $header-mobile-height: 0.1; //30vh
+    $header-text-mobile-height: 0.6;
+    $header-form-mobile-height: 0.4;
+      $header-form-input-mobile-height: 0.6;
+      $header-form-icon-mobile-height: 0.6;
+  $container-mobile-height: 0.85; //160vh
+    $container-aside-mobile-height: 0.5; //80vh
+      $my-totals-mobile-height: 0.15; //20vh
+      $food-items-mobile-height: 0.65;
+        $food-item-mobile-height: 1/5;
+      $food-pagination-mobile-height: 0.1;
+      $total-calories-mobile-height: 0.1;
+    $container-main-mobile-height: 0.5; //80vh
+      $details-mobile-height: 1; //80vh
+        $details-first-row-mobile-height: 0.6; //48vh
+          $details-first-row-second-column-children-mobile-height: 1/3;
+        $details-second-row-mobile-height: 0.3; //24vh  
+  $footer-mobile-height: 0.05; //10vh
+
+//------------------- Font Size -------------------// 
+
+$alert-box-text-mobile-font-size: 3vw;
+$alert-box-close-button-mobile-font-size: 6vw;
+$h1-mobile-font-size: 6vw;
+$h2-mobile-font-size: 6vw;
+$h3-mobile-font-size: 1.5vw;
+$body-mobile-font-size: 18px;
+$header-form-input-mobile-font-size: 5vw;
+$my-totals-text-mobile-font-size: 6vw;
+$food-pagination-mobile-font-size: 4vw;
+$total-calories-children-mobile-font-size: 4vw;
+$details-first-row-second-column-serving-mobile-font-size: 5vw;
+$details-first-row-second-column-add-to-totals-button-mobile-font-size: 4vw;
+$details-second-row-children-mobile-font-size: 3.5vw;
+$footer-text-mobile-font-size: 3vw;
+
+//------------- Margins and Paddings -------------//  
+
+$margin-mobile-height: 0.25vh;
+
+$alert-box-text-mobile-padding-left: 2vw;
+$alert-box-close-button-mobile-padding-bottom: 1vh;
+$header-form-input-mobile-padding: 0 0 0 3vw;
+$details-first-row-second-column-serving-buttons-mobile-padding-top: 2vh;
+$footer-mobile-padding-left-right: 2vw;
+
+//------------------- Borders -------------------//  
+
+$border-mobile-width-1-vw: 0.15vw;
+$border-mobile-width-2-vh: 0.25vh;
+$border-mobile-width-2-vw: 0.25vw;
+
+$alert-box-border-mobile-radius: 0.5vw;
+$button-input-border-mobile-radius: 0.25vw;
+$icon-border-mobile-radius: 0.25vw;
+
+//------------------- Colors -------------------//
+
+$bg-mobile-color: #d4b796;
+$first-mobile-color: black;
+$second-mobile-color: #FFFFFF;
+$third-mobile-color: rgb(102, 141, 94);
+$alert-mobile-color: #FFAA2B;

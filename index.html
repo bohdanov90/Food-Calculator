@@ -25,7 +25,7 @@
   </div>
 
   <div class="alert-box-wrong-query alert-box alert-box_hidden">
-    <span class="alert-box-wrong-query-text alert-box-text">There is no such food item. Please write a correct query.</span>
+    <span class="alert-box-wrong-query-text alert-box-text">There is no such food item. Please type a correct query.</span>
     <span class="alert-box-wrong-query-close alert-box-close">
       <button class="alert-box-wrong-query-close__button alert-box-close__button">&times;</button>
     </span>
@@ -506,10 +506,12 @@
             <div class="details-first-row-second-column">
                 <h2 class="details-first-row-second-column-title">Apple</h2>
                 <div class="details-first-row-second-column-serving">
-                  <span class="details-first-row-second-column-serving__text">Amount of Servings:&nbsp;</span>
-                  <button class="details-first-row-second-column-serving__minus button">-</button>
-                  <input class="details-first-row-second-column-serving__input input" type="text" readonly pattern="^[0-9]+$" value="1">
-                  <button class="details-first-row-second-column-serving__plus button">+</button>
+                  <span class="details-first-row-second-column-serving-text">Amount of Servings:&nbsp;</span>
+                  <div class="details-first-row-second-column-serving-buttons">
+                    <button class="details-first-row-second-column-serving-buttons__minus button">-</button>
+                    <input class="details-first-row-second-column-serving-buttons__input input" type="text" readonly pattern="^[0-9]+$" value="1">
+                    <button class="details-first-row-second-column-serving-buttons__plus button">+</button>
+                  </div>
                 </div>
                 <div class="details-first-row-second-column-add-to-totals">
                   <button class="details-first-row-second-column-add-to-totals__button button">Add to My Totals</button>

@@ -1,0 +1,338 @@
+@import "variables-laptop";
+@import "mixins";
+
+
+//////////////////////////////////////////////////////// for laptops ///////////////////////////////////////////////////////////////////
+
+@media only screen and (min-width: 768px) {
+
+//------------------------------------------ Alert Boxes ----------------------------------------//
+
+.alert-box {
+  background-color: $alert-color;
+  border-radius: $alert-box-border-radius;
+  height: $alert-box-height;
+  width: $alert-box-width;
+}
+
+  .alert-box-text {
+    color: $third-color;
+    font-size: $alert-box-text-font-size;
+    padding-left: $alert-box-text-padding-left;
+  }
+
+  .alert-box-close {
+    height: $alert-box-close-height;
+    width: $alert-box-close-width;
+  }
+
+    .alert-box-close__button {   
+      background-color: $alert-color;   
+      font-size: $alert-box-close-button-font-size;
+      height: 100%;
+      padding-bottom: $alert-box-close-button-padding-bottom;
+    }
+
+//------------------------------------------ Global Settings ----------------------------------------//
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+.button,
+.input {
+  background-color: $third-color;
+  border: $border-width-1-vw solid $first-color;
+  border-radius: $button-input-border-radius;
+}
+
+.input {
+  background-color: $second-color;
+  color: $third-color;
+}
+
+  .button:hover {
+    background-color: $second-color;
+    border: $border-width-1-vw solid $third-color;
+    color: $third-color;
+  }
+
+.icon {
+  background-color: $second-color;
+  border: $border-width-2-vh solid $first-color;
+  border-radius: $icon-border-radius;
+  color: $third-color;
+}
+
+  .icon_color {
+    color: $third-color;
+  }
+
+//------------------------------------------ Main Layout ----------------------------------------//
+
+body {
+  font-size: $body-font-size;
+}
+
+.article {
+  color: $first-color;
+  height: $article-height;
+  width: $article-width;
+}
+
+  .header {
+    background-color: $bg-color;
+    background-size: auto $article-width * $header-width;
+    border-bottom: $border-width-2-vw solid $second-color;
+    height: $article-height * $header-height;
+    width: $article-width * $header-width;
+  }
+
+    .header-text {
+      height: $article-height * $header-height * $header-text-height;
+      width: $article-width * $header-width;
+    }
+
+    .header-form {
+      height: $article-height * $header-height * $header-form-height;
+      width: $article-width * $header-width;
+    }
+
+      .header-form__input {
+        color: $third-color;
+        font-size: $header-form-input-font-size;
+        height: $article-height * $header-height * $header-form-height * $header-form-input-height;
+        padding: $header-form-input-padding;
+        width: $article-width * $header-width * $header-form__input-width;
+      }
+
+      .header-form__icon {
+        color: $third-color;
+        height: $article-height * $header-height * $header-form-height * $header-form-icon-height;
+        width: $article-width * $header-width * $header-form__icon-width;
+      }
+  
+  .container {
+    @include flex-row();
+    @include flex-centered();
+    background-color: $bg-color;
+    height: $article-height * $container-height;
+    width: $article-width * $container-width;
+  }
+
+    .container-aside {
+      border-right: $border-width-2-vw solid $second-color;
+      height: $article-height * $container-height * $container-aside-height;
+      width: $article-width * $container-width * $container-aside-width;
+    }
+
+      .my-totals {
+        height: $article-height * $container-height * $container-aside-height * $my-totals-height;
+        width: $article-width * $container-width * $container-aside-width * $my-totals-width;
+      }
+
+        .my-totals__text {
+          font-size: $my-totals-text-font-size;
+        }
+
+      .food-items {
+        height: $article-height * $container-height * $container-aside-height * $food-items-height;
+        width: $article-width * $container-width * $container-aside-width * $food-items-width;  
+      }
+
+        .food-items__page-1-4 {
+          height: $article-height * $container-height * $container-aside-height * $food-items-height;
+          width: $article-width * $container-width * $container-aside-width * $food-items-width;
+        }
+
+          .food-item-1-20 {
+            background-color: $second-color;
+            height: $article-height * $container-height * $container-aside-height * $food-items-height * 
+                    $food-item-height - ($margin-height * 2);
+            margin: $margin-height 0;
+            width: $article-width * $container-width * $container-aside-width * $food-items-width;
+          }
+
+            .food-item-1-20-picture-container {
+              height: $article-height * $container-height * $container-aside-height * $food-items-height * 
+                      $food-item-height - ($margin-height * 2);
+              width: $article-width * $container-width * $container-aside-width * $food-items-width * $food-item-1-20-picture-container-width;
+            }
+
+              .food-item-1-20-picture {
+                height: 100%;
+                width: auto;
+                max-width: 100%;
+              }
+
+            .food-item-1-20-text-container  {
+              height: $article-height * $container-height * $container-aside-height * $food-items-height * 
+                      $food-item-height - ($margin-height * 2);
+              width: $article-width * $container-width * $container-aside-width * $food-items-width * $food-item-1-20-text-container-width;
+            }
+
+            .food-item-1-20-bin  {
+              height: $article-height * $container-height * $container-aside-height * $food-items-height * 
+                      $food-item-height - ($margin-height * 2);
+              width: $article-width * $container-width * $container-aside-width * $food-items-width * $food-item-1-20-bin-width;
+            }
+
+      .food-pagination {
+        height: $article-height * $container-height * $container-aside-height * $food-pagination-height;
+        width: $article-width * $container-width * $container-aside-width * $food-pagination-width;
+        font-size: $food-pagination-font-size;
+      }
+
+        .food-pagination-left-button {
+          width: $article-width * $container-width * $container-aside-width * $food-pagination-width * $food-pagination-left-button-width;
+        }
+        
+        .food-pagination-text {
+          width: $article-width * $container-width * $container-aside-width * $food-pagination-width * $food-pagination-text-width;
+        }
+
+        .food-pagination-right-button {
+          width: $article-width * $container-width * $container-aside-width * $food-pagination-width * $food-pagination-right-button-width;
+        }
+
+      .total-calories {
+        height: $article-height * $container-height * $container-aside-height * $total-calories-height;
+        width: $article-width * $container-width * $container-aside-width * $total-calories-width;
+      }
+
+        .total-calories__text,
+        .total-calories__value {
+          font-size: $total-calories-children-font-size;
+        }
+
+    .container-main {  
+      height: $article-height * $container-height * $container-main-height;
+      width: $article-width * $container-width * $container-main-width;
+    }
+
+      .details {
+        height: $article-height * $container-height * $container-main-height * $details-height;
+        width: $article-width * $container-width * $container-main-width * $details-width;
+      }
+
+        .details-first-row {
+          height: $article-height * $container-height * $container-main-height * $details-height * $details-first-row-height;
+          width: $article-width * $container-width * $container-main-width * $details-width * $details-first-row-width;
+        }
+
+          .details-first-row-first-column {
+            background-color: $second-color;
+            border: $border-width-1-vw solid $first-color;
+            height: $article-height * $container-height * $container-main-height * $details-height * $details-first-row-height;
+            width: $article-width * $container-width * $container-main-width * $details-width * 
+                    $details-first-row-width * $first-row-first-column-width;
+          }
+        
+            .details-first-row-first-column__picture {
+              height: 90%;
+              max-width: 90%;
+              width: auto;
+            }
+
+          .details-first-row-second-column {
+            height: $article-height * $container-height * $container-main-height * $details-height * $details-first-row-height;
+            width: $article-width * $container-width * $container-main-width * $details-width * 
+                    $details-first-row-width * $first-row-second-column-width;
+          }
+
+            .details-first-row-second-column-title {
+              height: $article-height * $container-height * $container-main-height * $details-height * $details-first-row-height * 
+                      $details-first-row-second-column-children-height;
+              width: $article-width * $container-width * $container-main-width * $details-width * 
+                      $details-first-row-width * $first-row-second-column-width;
+            }
+
+            .details-first-row-second-column-serving {
+              font-size: $details-first-row-second-column-serving-font-size;
+              height: $article-height * $container-height * $container-main-height * $details-height * $details-first-row-height * 
+                      $details-first-row-second-column-children-height;
+              width: $article-width * $container-width * $container-main-width * $details-width * 
+                      $details-first-row-width * $first-row-second-column-width;
+            }
+
+              .details-first-row-second-column-serving-buttons {
+                padding-top: $details-first-row-second-column-serving-buttons-padding-top;
+              }
+
+                .details-first-row-second-column-serving-buttons__minus,
+                .details-first-row-second-column-serving-buttons__plus {
+                  padding: 0;
+                  width: $article-width * $container-width * $container-main-width * $details-width * 
+                        $details-first-row-width * $first-row-second-column-width * $first-row-second-column-serving-children-width;
+                }
+
+                .details-first-row-second-column-serving-buttons__input { 
+                  padding: 0;
+                  width: $article-width * $container-width * $container-main-width * $details-width * 
+                        $details-first-row-width * $first-row-second-column-width * $first-row-second-column-serving-children-width;
+                }
+
+            .details-first-row-second-column-add-to-totals {
+              height: $article-height * $container-height * $container-main-height * $details-height * $details-first-row-height * 
+                      $details-first-row-second-column-children-height;
+              width: $article-width * $container-width * $container-main-width * $details-width * 
+                      $details-first-row-width * $first-row-second-column-width;
+            }
+
+              .details-first-row-second-column-add-to-totals__button {
+                font-size: $details-first-row-second-column-add-to-totals-button-font-size;
+                height: 50%;
+                width: 50%;
+              }
+
+        .details-second-row {
+          height: $article-height * $container-height * $container-main-height * $details-height * $details-second-row-height;
+          width: $article-width * $container-width * $container-main-width * $details-width * $details-second-row-width;
+        }
+
+          .details-second-row-first-column {
+            width: $article-width * $container-width * $container-main-width * $details-width * 
+                    $details-second-row-width * $second-row-first-column-width;
+          }
+
+          .details-second-row-second-column {
+            width: $article-width * $container-width * $container-main-width * $details-width * 
+                    $details-second-row-width * $second-row-second-column-width;
+          }
+
+            .details-second-row-first-column-serving-size,
+            .details-second-row-first-column-calories-amount-in-pieces,
+            .details-second-row-first-column-calories-amount-in-grams,
+            .details-second-row-second-column-fat,
+            .details-second-row-second-column-carbohydrates,
+            .details-second-row-second-column-protein {
+              font-size: $details-second-row-children-font-size;
+              width: 100%;
+            }
+
+  .footer {
+    background-color: $bg-color;
+    border-top: $border-width-2-vw solid $second-color;
+    height: $article-height * $footer-height;
+    width: $article-width * $footer-width;
+  }
+
+    .footer__text-1 {
+      font-size: $footer-text-font-size;
+      padding-left: $footer-padding-left-right;
+    }
+
+    .footer__text-2 {
+      font-size: $footer-text-font-size;
+      padding-right: $footer-padding-left-right;
+    }
+
+}

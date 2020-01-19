@@ -52,18 +52,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FFAA2B;
-  border-radius: 0.5vw;
-  cursor: default;
   font-weight: 900;
-  height: 10vh;
-  position: absolute;
-  width: 50vw; }
-
-.alert-box-text {
-  color: #668d5e;
-  font-size: 1.5vw;
-  padding-left: 2vw; }
+  cursor: default;
+  position: absolute; }
 
 .alert-box-close {
   display: -webkit-box;
@@ -79,17 +70,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
-  position: relative;
-  width: 5vw; }
+  position: relative; }
 
 .alert-box-close__button {
-  background-color: #FFAA2B;
   border: none;
   cursor: pointer;
-  font-size: 3vw;
-  height: 100%;
-  padding-bottom: 1vh;
   position: absolute; }
 
 * {
@@ -103,34 +88,13 @@ h3,
 figure {
   margin: 0; }
 
-h1 {
-  font-size: 4vw; }
-
-h2 {
-  font-size: 2.5vw; }
-
-h3 {
-  font-size: 1.5vw; }
-
 .button,
 .input {
   -webkit-box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
-  background-color: #668d5e;
-  border: 0.15vw solid black;
-  border-radius: 0.25vw; }
+          box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2); }
 
 .button {
   cursor: pointer; }
-
-.input {
-  background-color: #FFFFFF;
-  color: black; }
-
-.button:hover {
-  background-color: #FFFFFF;
-  border: 0.15vw solid #668d5e;
-  color: #668d5e; }
 
 .button:active {
   -webkit-transform: translateY(2px);
@@ -139,14 +103,7 @@ h3 {
 .icon {
   -webkit-box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
-  background-color: #FFFFFF;
-  border: 0.25vh solid black;
-  border-radius: 0.25vw;
-  color: black;
   cursor: pointer; }
-
-.icon_color {
-  color: #668d5e; }
 
 body {
   display: -webkit-box;
@@ -162,8 +119,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Caveat', cursive;
-  font-size: 18px; }
+  font-family: 'Caveat', cursive; }
 
 .article {
   display: -webkit-box;
@@ -179,10 +135,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
-  height: 100vh;
-  position: relative;
-  width: 100vw; }
+  position: relative; }
 
 .header {
   display: -webkit-box;
@@ -197,12 +150,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  background-color: #d4b796;
-  background-size: auto 100vw;
-  border-bottom: 0.25vw solid #FFFFFF;
-  height: 20vh;
-  width: 100vw; }
+          align-items: center; }
 
 .header-text {
   display: -webkit-box;
@@ -218,9 +166,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 900;
-  height: 10vh;
-  width: 100vw; }
+  font-weight: 900; }
 
 .header-form {
   display: -webkit-box;
@@ -236,17 +182,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
-  text-align: center;
-  width: 100vw; }
+  text-align: center; }
 
 .header-form__input {
-  color: #668d5e;
-  font-size: 1.5vw;
-  height: 6vh;
-  outline: none;
-  padding: 0 0 0 1vw;
-  width: 25vw; }
+  outline: none; }
 
 .header-form__icon {
   display: -webkit-box;
@@ -261,28 +200,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  color: #668d5e;
-  height: 6vh;
-  width: 3vw; }
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #d4b796;
-  height: 70vh;
-  width: 100vw; }
+          align-items: center; }
 
 .container-aside {
   display: -webkit-box;
@@ -297,10 +215,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  border-right: 0.25vw solid #FFFFFF;
-  height: 70vh;
-  width: 30vw; }
+          align-items: center; }
 
 .my-totals {
   display: -webkit-box;
@@ -315,12 +230,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  height: 7vh;
-  width: 27vw; }
-
-.my-totals__text {
-  font-size: 2.5vw; }
+          align-items: center; }
 
 .food-items {
   display: -webkit-box;
@@ -335,13 +245,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  height: 49vh;
-  width: 27vw; }
-
-.food-items__page-1-4 {
-  height: 49vh;
-  width: 27vw; }
+          align-items: center; }
 
 .food-item-1-20 {
   display: -webkit-box;
@@ -356,11 +260,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  background-color: #FFFFFF;
-  height: 9.3vh;
-  margin: 0.25vh 0;
-  width: 27vw; }
+          align-items: center; }
 
 .food-item-1-20-picture-container {
   display: -webkit-box;
@@ -375,14 +275,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  height: 9.3vh;
-  width: 5.4vw; }
-
-.food-item-1-20-picture {
-  height: 100%;
-  width: auto;
-  max-width: 100%; }
+          align-items: center; }
 
 .food-item-1-20-text-container {
   display: -webkit-box;
@@ -397,9 +290,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  height: 9.3vh;
-  width: 17.55vw; }
+          align-items: center; }
 
 .food-item-1-20-bin {
   display: -webkit-box;
@@ -415,9 +306,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
-  height: 9.3vh;
-  width: 4.05vw; }
+  cursor: pointer; }
 
 .food-pagination {
   display: -webkit-box;
@@ -432,13 +321,9 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  height: 7vh;
-  width: 27vw; }
+          align-items: center; }
 
 .food-pagination-left-button {
-  -webkit-box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,8 +336,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  width: 6.75vw; }
+          align-items: center; }
 
 .food-pagination-text {
   display: -webkit-box;
@@ -467,8 +351,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  width: 13.5vw; }
+          align-items: center; }
 
 .food-pagination-right-button {
   display: -webkit-box;
@@ -483,8 +366,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  width: 6.75vw; }
+          align-items: center; }
 
 .total-calories {
   display: -webkit-box;
@@ -499,13 +381,10 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  height: 7vh;
-  width: 27vw; }
+          align-items: center; }
 
 .total-calories__text,
 .total-calories__value {
-  font-size: 2vw;
   text-decoration: underline; }
 
 .container-main {
@@ -521,9 +400,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  height: 70vh;
-  width: 70vw; }
+          align-items: center; }
 
 .details {
   display: -webkit-box;
@@ -538,9 +415,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  height: 70vh;
-  width: 70vw; }
+          align-items: center; }
 
 .details-first-row {
   display: -webkit-box;
@@ -555,9 +430,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  height: 42vh;
-  width: 63vw; }
+          align-items: center; }
 
 .details-first-row-first-column {
   display: -webkit-box;
@@ -572,16 +445,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  background-color: #FFFFFF;
-  border: 0.15vw solid black;
-  height: 42vh;
-  width: 28.35vw; }
-
-.details-first-row-first-column__picture {
-  height: 90%;
-  max-width: 90%;
-  width: auto; }
+          align-items: center; }
 
 .details-first-row-second-column {
   display: -webkit-box;
@@ -596,9 +460,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  height: 42vh;
-  width: 34.65vw; }
+          align-items: center; }
 
 .details-first-row-second-column-title {
   display: -webkit-box;
@@ -613,11 +475,24 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  height: 14vh;
-  width: 34.65vw; }
+          align-items: center; }
 
 .details-first-row-second-column-serving {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.details-first-row-second-column-serving-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -630,22 +505,15 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  font-size: 2vw;
-  height: 14vh;
-  width: 34.65vw; }
+          align-items: center; }
 
-.details-first-row-second-column-serving__minus,
-.details-first-row-second-column-serving__plus {
-  padding: 0;
-  text-align: center;
-  width: 2vw; }
+.details-first-row-second-column-serving-buttons__minus,
+.details-first-row-second-column-serving-buttons__plus {
+  text-align: center; }
 
-.details-first-row-second-column-serving__input {
+.details-first-row-second-column-serving-buttons__input {
   cursor: default;
-  padding: 0;
-  text-align: center;
-  width: 2vw; }
+  text-align: center; }
 
 .details-first-row-second-column-add-to-totals {
   display: -webkit-box;
@@ -660,14 +528,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  height: 14vh;
-  width: 34.65vw; }
-
-.details-first-row-second-column-add-to-totals__button {
-  font-size: 1.75vw;
-  height: 50%;
-  width: 50%; }
+          align-items: center; }
 
 .details-second-row {
   display: -webkit-box;
@@ -682,9 +543,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  height: 21vh;
-  width: 63vw; }
+          align-items: center; }
 
 .details-second-row-first-column,
 .details-second-row-second-column {
@@ -701,12 +560,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-
-.details-second-row-first-column {
-  width: 37.8vw; }
-
-.details-second-row-second-column {
-  width: 25.2vw; }
 
 .details-second-row-first-column-serving-size,
 .details-second-row-first-column-calories-amount-in-pieces,
@@ -727,10 +580,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.5vw;
   overflow: hidden;
-  white-space: nowrap;
-  width: 100%; }
+  white-space: nowrap; }
 
 .details-second-row-first-column-serving-size__value,
 .details-second-row-first-column-calories-amount-in-pieces__value,
@@ -753,16 +604,532 @@ body {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  background-color: #d4b796;
-  border-top: 0.25vw solid #FFFFFF;
-  height: 10vh;
-  width: 100vw; }
+          align-items: center; }
 
-.footer__text-1 {
-  font-size: 1.5vw;
-  padding-left: 2vw; }
+@media only screen and (min-width: 768px) {
+  .alert-box {
+    background-color: #FFAA2B;
+    border-radius: 0.5vw;
+    height: 10vh;
+    width: 50vw; }
 
-.footer__text-2 {
-  font-size: 1.5vw;
-  padding-right: 2vw; }
+  .alert-box-text {
+    color: #668d5e;
+    font-size: 2vw;
+    padding-left: 2vw; }
+
+  .alert-box-close {
+    height: 10vh;
+    width: 5vw; }
+
+  .alert-box-close__button {
+    background-color: #FFAA2B;
+    font-size: 4vw;
+    height: 100%;
+    padding-bottom: 1vh; }
+
+  h1 {
+    font-size: 3.5vw; }
+
+  h2 {
+    font-size: 3.5vw; }
+
+  h3 {
+    font-size: 1.25vw; }
+
+  .button,
+  .input {
+    background-color: #668d5e;
+    border: 0.15vw solid black;
+    border-radius: 0.25vw; }
+
+  .input {
+    background-color: #FFFFFF;
+    color: #668d5e; }
+
+  .button:hover {
+    background-color: #FFFFFF;
+    border: 0.15vw solid #668d5e;
+    color: #668d5e; }
+
+  .icon {
+    background-color: #FFFFFF;
+    border: 0.25vh solid black;
+    border-radius: 0.25vw;
+    color: #668d5e; }
+
+  .icon_color {
+    color: #668d5e; }
+
+  body {
+    font-size: 18px; }
+
+  .article {
+    color: black;
+    height: 100vh;
+    width: 100vw; }
+
+  .header {
+    background-color: #d4b796;
+    background-size: auto 100vw;
+    border-bottom: 0.25vw solid #FFFFFF;
+    height: 20vh;
+    width: 100vw; }
+
+  .header-text {
+    height: 10vh;
+    width: 100vw; }
+
+  .header-form {
+    height: 10vh;
+    width: 100vw; }
+
+  .header-form__input {
+    color: #668d5e;
+    font-size: 2.5vw;
+    height: 6vh;
+    padding: 0 0 0 1vw;
+    width: 25vw; }
+
+  .header-form__icon {
+    color: #668d5e;
+    height: 6vh;
+    width: 5vw; }
+
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #d4b796;
+    height: 70vh;
+    width: 100vw; }
+
+  .container-aside {
+    border-right: 0.25vw solid #FFFFFF;
+    height: 70vh;
+    width: 30vw; }
+
+  .my-totals {
+    height: 7vh;
+    width: 27vw; }
+
+  .my-totals__text {
+    font-size: 2.25vw; }
+
+  .food-items {
+    height: 49vh;
+    width: 27vw; }
+
+  .food-items__page-1-4 {
+    height: 49vh;
+    width: 27vw; }
+
+  .food-item-1-20 {
+    background-color: #FFFFFF;
+    height: 9.3vh;
+    margin: 0.25vh 0;
+    width: 27vw; }
+
+  .food-item-1-20-picture-container {
+    height: 9.3vh;
+    width: 5.4vw; }
+
+  .food-item-1-20-picture {
+    height: 100%;
+    width: auto;
+    max-width: 100%; }
+
+  .food-item-1-20-text-container {
+    height: 9.3vh;
+    width: 17.55vw; }
+
+  .food-item-1-20-bin {
+    height: 9.3vh;
+    width: 4.05vw; }
+
+  .food-pagination {
+    height: 7vh;
+    width: 27vw;
+    font-size: 1.75vw; }
+
+  .food-pagination-left-button {
+    width: 6.75vw; }
+
+  .food-pagination-text {
+    width: 13.5vw; }
+
+  .food-pagination-right-button {
+    width: 6.75vw; }
+
+  .total-calories {
+    height: 7vh;
+    width: 27vw; }
+
+  .total-calories__text,
+  .total-calories__value {
+    font-size: 2.5vw; }
+
+  .container-main {
+    height: 70vh;
+    width: 70vw; }
+
+  .details {
+    height: 70vh;
+    width: 70vw; }
+
+  .details-first-row {
+    height: 42vh;
+    width: 63vw; }
+
+  .details-first-row-first-column {
+    background-color: #FFFFFF;
+    border: 0.15vw solid black;
+    height: 42vh;
+    width: 28.35vw; }
+
+  .details-first-row-first-column__picture {
+    height: 90%;
+    max-width: 90%;
+    width: auto; }
+
+  .details-first-row-second-column {
+    height: 42vh;
+    width: 34.65vw; }
+
+  .details-first-row-second-column-title {
+    height: 14vh;
+    width: 34.65vw; }
+
+  .details-first-row-second-column-serving {
+    font-size: 2.75vw;
+    height: 14vh;
+    width: 34.65vw; }
+
+  .details-first-row-second-column-serving-buttons {
+    padding-top: 1vh; }
+
+  .details-first-row-second-column-serving-buttons__minus,
+  .details-first-row-second-column-serving-buttons__plus {
+    padding: 0;
+    width: 2.4255vw; }
+
+  .details-first-row-second-column-serving-buttons__input {
+    padding: 0;
+    width: 2.4255vw; }
+
+  .details-first-row-second-column-add-to-totals {
+    height: 14vh;
+    width: 34.65vw; }
+
+  .details-first-row-second-column-add-to-totals__button {
+    font-size: 2.25vw;
+    height: 50%;
+    width: 50%; }
+
+  .details-second-row {
+    height: 21vh;
+    width: 63vw; }
+
+  .details-second-row-first-column {
+    width: 37.8vw; }
+
+  .details-second-row-second-column {
+    width: 25.2vw; }
+
+  .details-second-row-first-column-serving-size,
+  .details-second-row-first-column-calories-amount-in-pieces,
+  .details-second-row-first-column-calories-amount-in-grams,
+  .details-second-row-second-column-fat,
+  .details-second-row-second-column-carbohydrates,
+  .details-second-row-second-column-protein {
+    font-size: 2.25vw;
+    width: 100%; }
+
+  .footer {
+    background-color: #d4b796;
+    border-top: 0.25vw solid #FFFFFF;
+    height: 10vh;
+    width: 100vw; }
+
+  .footer__text-1 {
+    font-size: 1.75vw;
+    padding-left: 2vw; }
+
+  .footer__text-2 {
+    font-size: 1.75vw;
+    padding-right: 2vw; } }
+@media only screen and (max-width: 768px) {
+  .alert-box {
+    background-color: #FFAA2B;
+    border-radius: 0.5vw;
+    height: 10vh;
+    width: 75vw; }
+
+  .alert-box-text {
+    color: #668d5e;
+    font-size: 3vw;
+    padding-left: 2vw; }
+
+  .alert-box-close {
+    height: 10vh;
+    width: 5vw; }
+
+  .alert-box-close__button {
+    background-color: #FFAA2B;
+    font-size: 6vw;
+    height: 100%;
+    padding-bottom: 1vh; }
+
+  h1 {
+    font-size: 6vw; }
+
+  h2 {
+    font-size: 6vw; }
+
+  h3 {
+    font-size: 1.5vw; }
+
+  .button,
+  .input {
+    background-color: #668d5e;
+    border: 0.15vw solid black;
+    border-radius: 0.25vw; }
+
+  .input {
+    background-color: #FFFFFF;
+    color: black; }
+
+  .button:hover {
+    background-color: #FFFFFF;
+    border: 0.15vw solid #668d5e;
+    color: #668d5e; }
+
+  .icon {
+    background-color: #FFFFFF;
+    border: 0.25vh solid black;
+    border-radius: 0.25vw;
+    color: black; }
+
+  .icon_color {
+    color: #668d5e; }
+
+  body {
+    font-size: 18px; }
+
+  .article {
+    height: 200vh;
+    width: 100vw;
+    color: black; }
+
+  .header {
+    height: 20vh;
+    width: 100vw;
+    background-color: #d4b796;
+    background-size: auto 100vw;
+    border-bottom: 0.25vw solid #FFFFFF; }
+
+  .header-text {
+    height: 12vh;
+    width: 100vw; }
+
+  .header-form {
+    height: 8vh;
+    width: 100vw; }
+
+  .header-form__input {
+    height: 4.8vh;
+    width: 50vw;
+    color: #668d5e;
+    font-size: 5vw;
+    padding: 0 0 0 3vw; }
+
+  .header-form__icon {
+    color: #668d5e;
+    height: 4.8vh;
+    width: 8vw; }
+
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #d4b796;
+    height: 170vh;
+    width: 100vw; }
+
+  .container-aside {
+    border-right: 0.25vw solid #FFFFFF;
+    height: 85vh;
+    width: 100vw;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+
+  .my-totals {
+    height: 12.75vh;
+    width: 80vw; }
+
+  .my-totals__text {
+    font-size: 6vw; }
+
+  .food-items {
+    height: 55.25vh;
+    width: 80vw; }
+
+  .food-items__page-1-4 {
+    height: 55.25vh;
+    width: 80vw; }
+
+  .food-item-1-20 {
+    height: 10.55vh;
+    margin: 0.25vh 0;
+    width: 80vw;
+    background-color: #FFFFFF;
+    margin: 0.25vh 0; }
+
+  .food-item-1-20-picture-container {
+    height: 10.55vh;
+    width: 16vw; }
+
+  .food-item-1-20-picture {
+    height: 100%;
+    width: auto;
+    max-width: 100%; }
+
+  .food-item-1-20-text-container {
+    height: 10.55vh;
+    width: 52vw; }
+
+  .food-item-1-20-bin {
+    height: 10.55vh;
+    width: 12vw; }
+
+  .food-pagination {
+    height: 8.5vh;
+    width: 80vw;
+    font-size: 4vw; }
+
+  .food-pagination-left-button {
+    width: 20vw; }
+
+  .food-pagination-text {
+    width: 40vw; }
+
+  .food-pagination-right-button {
+    width: 20vw; }
+
+  .total-calories {
+    height: 8.5vh;
+    width: 80vw; }
+
+  .total-calories__text,
+  .total-calories__value {
+    font-size: 4vw; }
+
+  .container-main {
+    height: 85vh;
+    width: 100vw;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+
+  .details {
+    height: 85vh;
+    width: 100vw; }
+
+  .details-first-row {
+    height: 51vh;
+    width: 95vw; }
+
+  .details-first-row-first-column {
+    height: 51vh;
+    width: 57vw;
+    background-color: #FFFFFF;
+    border: 0.15vw solid black; }
+
+  .details-first-row-first-column__picture {
+    height: 90%;
+    max-width: 90%;
+    width: auto; }
+
+  .details-first-row-second-column {
+    height: 51vh;
+    width: 38vw; }
+
+  .details-first-row-second-column-title {
+    height: 17vh;
+    width: 38vw; }
+
+  .details-first-row-second-column-serving {
+    height: 17vh;
+    width: 38vw;
+    font-size: 5vw; }
+
+  .details-first-row-second-column-serving-buttons {
+    padding-top: 2vh; }
+
+  .details-first-row-second-column-serving-buttons__minus,
+  .details-first-row-second-column-serving-buttons__plus,
+  .details-first-row-second-column-serving-buttons__input {
+    width: 7.6vw; }
+
+  .details-first-row-second-column-add-to-totals {
+    height: 17vh;
+    width: 38vw; }
+
+  .details-first-row-second-column-add-to-totals__button {
+    font-size: 4vw;
+    height: 50%;
+    width: 75%; }
+
+  .details-second-row {
+    height: 25.5vh;
+    width: 95vw; }
+
+  .details-second-row-first-column {
+    width: 57vw; }
+
+  .details-second-row-second-column {
+    width: 38vw; }
+
+  .details-second-row-first-column-serving-size,
+  .details-second-row-first-column-calories-amount-in-pieces,
+  .details-second-row-first-column-calories-amount-in-grams,
+  .details-second-row-second-column-fat,
+  .details-second-row-second-column-carbohydrates,
+  .details-second-row-second-column-protein {
+    font-size: 3.5vw;
+    width: 100%; }
+
+  .footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: #d4b796;
+    border-top: 0.25vw solid #FFFFFF; }
+
+  .footer__text-1 {
+    font-size: 3vw;
+    padding-left: 2vw; }
+
+  .footer__text-2 {
+    font-size: 3vw;
+    padding-right: 2vw; } }
