@@ -44,7 +44,7 @@
   @include flex-horiz-space-between();
   @include font-bold();
   cursor: default;
-  position: absolute;
+  position: fixed;
 }
 
   .alert-box-close {
@@ -81,10 +81,6 @@ figure {
 .button {
   cursor: pointer;
 }
-
-  .button:active {
-    transform:translateY(2px);
-  }
 
 .icon {
   @include box-shadow();
@@ -149,9 +145,6 @@ body {
         @include flex-column();
         @include flex-centered();
       }
-
-        .food-items__page-1-4 {
-        }
 
           .food-item-1-20 {
             @include flex-row();
@@ -298,16 +291,6 @@ body {
 
 //------------------------------------------ Importing Adaptive Layout ----------------------------------------//
 
+
 @import "laptop";
 @import "mobile";
-
-
-
-
-
-
-
-
-
-
-

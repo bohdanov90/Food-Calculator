@@ -54,7 +54,7 @@
           align-items: center;
   font-weight: 900;
   cursor: default;
-  position: absolute; }
+  position: fixed; }
 
 .alert-box-close {
   display: -webkit-box;
@@ -95,10 +95,6 @@ figure {
 
 .button {
   cursor: pointer; }
-
-.button:active {
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px); }
 
 .icon {
   -webkit-box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
@@ -611,6 +607,7 @@ body {
     background-color: #FFAA2B;
     border-radius: 0.5vw;
     height: 10vh;
+    top: 20vh;
     width: 50vw; }
 
   .alert-box-text {
@@ -645,11 +642,6 @@ body {
 
   .input {
     background-color: #FFFFFF;
-    color: #668d5e; }
-
-  .button:hover {
-    background-color: #FFFFFF;
-    border: 0.15vw solid #668d5e;
     color: #668d5e; }
 
   .icon {
@@ -758,9 +750,9 @@ body {
     width: 4.05vw; }
 
   .food-pagination {
+    font-size: 1.75vw;
     height: 7vh;
-    width: 27vw;
-    font-size: 1.75vw; }
+    width: 27vw; }
 
   .food-pagination-left-button {
     width: 6.75vw; }
@@ -819,10 +811,7 @@ body {
     padding-top: 1vh; }
 
   .details-first-row-second-column-serving-buttons__minus,
-  .details-first-row-second-column-serving-buttons__plus {
-    padding: 0;
-    width: 2.4255vw; }
-
+  .details-first-row-second-column-serving-buttons__plus,
   .details-first-row-second-column-serving-buttons__input {
     padding: 0;
     width: 2.4255vw; }
@@ -868,11 +857,21 @@ body {
   .footer__text-2 {
     font-size: 1.75vw;
     padding-right: 2vw; } }
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background-color: #FFFFFF;
+    border: 0.15vw solid #668d5e;
+    color: #668d5e; }
+
+  .button:active {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); } }
 @media only screen and (max-width: 768px) {
   .alert-box {
     background-color: #FFAA2B;
     border-radius: 0.5vw;
     height: 10vh;
+    top: 20vh;
     width: 75vw; }
 
   .alert-box-text {
@@ -909,11 +908,6 @@ body {
     background-color: #FFFFFF;
     color: black; }
 
-  .button:hover {
-    background-color: #FFFFFF;
-    border: 0.15vw solid #668d5e;
-    color: #668d5e; }
-
   .icon {
     background-color: #FFFFFF;
     border: 0.25vh solid black;
@@ -927,16 +921,16 @@ body {
     font-size: 18px; }
 
   .article {
+    color: black;
     height: 200vh;
-    width: 100vw;
-    color: black; }
+    width: 100vw; }
 
   .header {
-    height: 20vh;
-    width: 100vw;
     background-color: #d4b796;
     background-size: auto 100vw;
-    border-bottom: 0.25vw solid #FFFFFF; }
+    border-bottom: 0.25vw solid #FFFFFF;
+    height: 20vh;
+    width: 100vw; }
 
   .header-text {
     height: 12vh;
@@ -947,15 +941,15 @@ body {
     width: 100vw; }
 
   .header-form__input {
-    height: 4.8vh;
-    width: 50vw;
     color: #668d5e;
     font-size: 5vw;
-    padding: 0 0 0 3vw; }
+    height: 7.2vh;
+    padding: 0 0 0 3vw;
+    width: 50vw; }
 
   .header-form__icon {
     color: #668d5e;
-    height: 4.8vh;
+    height: 7.2vh;
     width: 8vw; }
 
   .container {
@@ -979,54 +973,53 @@ body {
   .container-aside {
     border-right: 0.25vw solid #FFFFFF;
     height: 85vh;
-    width: 100vw;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
-            order: 2; }
+            order: 2;
+    width: 100vw; }
 
   .my-totals {
-    height: 12.75vh;
+    height: 8.5vh;
     width: 80vw; }
 
   .my-totals__text {
     font-size: 6vw; }
 
   .food-items {
-    height: 55.25vh;
+    height: 59.5vh;
     width: 80vw; }
 
   .food-items__page-1-4 {
-    height: 55.25vh;
+    height: 59.5vh;
     width: 80vw; }
 
   .food-item-1-20 {
-    height: 10.55vh;
-    margin: 0.25vh 0;
-    width: 80vw;
     background-color: #FFFFFF;
-    margin: 0.25vh 0; }
+    height: 11.4vh;
+    margin: 0.25vh 0;
+    width: 80vw; }
 
   .food-item-1-20-picture-container {
-    height: 10.55vh;
+    height: 11.4vh;
     width: 16vw; }
 
   .food-item-1-20-picture {
     height: 100%;
-    width: auto;
-    max-width: 100%; }
+    max-width: 100%;
+    width: auto; }
 
   .food-item-1-20-text-container {
-    height: 10.55vh;
+    height: 11.4vh;
     width: 52vw; }
 
   .food-item-1-20-bin {
-    height: 10.55vh;
+    height: 11.4vh;
     width: 12vw; }
 
   .food-pagination {
+    font-size: 4vw;
     height: 8.5vh;
-    width: 80vw;
-    font-size: 4vw; }
+    width: 80vw; }
 
   .food-pagination-left-button {
     width: 20vw; }
@@ -1047,10 +1040,10 @@ body {
 
   .container-main {
     height: 85vh;
-    width: 100vw;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
-            order: 1; }
+            order: 1;
+    width: 100vw; }
 
   .details {
     height: 85vh;
@@ -1061,10 +1054,10 @@ body {
     width: 95vw; }
 
   .details-first-row-first-column {
-    height: 51vh;
-    width: 57vw;
     background-color: #FFFFFF;
-    border: 0.15vw solid black; }
+    border: 0.15vw solid black;
+    height: 51vh;
+    width: 57vw; }
 
   .details-first-row-first-column__picture {
     height: 90%;
@@ -1080,9 +1073,9 @@ body {
     width: 38vw; }
 
   .details-first-row-second-column-serving {
+    font-size: 5vw;
     height: 17vh;
-    width: 38vw;
-    font-size: 5vw; }
+    width: 38vw; }
 
   .details-first-row-second-column-serving-buttons {
     padding-top: 2vh; }
@@ -1090,6 +1083,7 @@ body {
   .details-first-row-second-column-serving-buttons__minus,
   .details-first-row-second-column-serving-buttons__plus,
   .details-first-row-second-column-serving-buttons__input {
+    padding: 0;
     width: 7.6vw; }
 
   .details-first-row-second-column-add-to-totals {
@@ -1121,10 +1115,10 @@ body {
     width: 100%; }
 
   .footer {
-    height: 10vh;
-    width: 100vw;
     background-color: #d4b796;
-    border-top: 0.25vw solid #FFFFFF; }
+    border-top: 0.25vw solid #FFFFFF;
+    height: 10vh;
+    width: 100vw; }
 
   .footer__text-1 {
     font-size: 3vw;
@@ -1133,3 +1127,12 @@ body {
   .footer__text-2 {
     font-size: 3vw;
     padding-right: 2vw; } }
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background-color: #FFFFFF;
+    border: 0.15vw solid #668d5e;
+    color: #668d5e; }
+
+  .button:active {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); } }

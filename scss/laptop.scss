@@ -12,6 +12,7 @@
   background-color: $alert-color;
   border-radius: $alert-box-border-radius;
   height: $alert-box-height;
+  top: $alert-box-padding-top;
   width: $alert-box-width;
 }
 
@@ -58,12 +59,6 @@ h3 {
   background-color: $second-color;
   color: $third-color;
 }
-
-  .button:hover {
-    background-color: $second-color;
-    border: $border-width-1-vw solid $third-color;
-    color: $third-color;
-  }
 
 .icon {
   background-color: $second-color;
@@ -186,9 +181,9 @@ body {
             }
 
       .food-pagination {
+        font-size: $food-pagination-font-size;
         height: $article-height * $container-height * $container-aside-height * $food-pagination-height;
         width: $article-width * $container-width * $container-aside-width * $food-pagination-width;
-        font-size: $food-pagination-font-size;
       }
 
         .food-pagination-left-button {
@@ -268,13 +263,8 @@ body {
               }
 
                 .details-first-row-second-column-serving-buttons__minus,
-                .details-first-row-second-column-serving-buttons__plus {
-                  padding: 0;
-                  width: $article-width * $container-width * $container-main-width * $details-width * 
-                        $details-first-row-width * $first-row-second-column-width * $first-row-second-column-serving-children-width;
-                }
-
-                .details-first-row-second-column-serving-buttons__input { 
+                .details-first-row-second-column-serving-buttons__plus,
+                .details-first-row-second-column-serving-buttons__input {
                   padding: 0;
                   width: $article-width * $container-width * $container-main-width * $details-width * 
                         $details-first-row-width * $first-row-second-column-width * $first-row-second-column-serving-children-width;
@@ -334,5 +324,21 @@ body {
       font-size: $footer-text-font-size;
       padding-right: $footer-padding-left-right;
     }
+
+}
+
+//----------------------- for non-touchscreen devices (to eliminate hover effects trails) ---------------------//
+
+@media (hover: hover) and (pointer: fine) {
+  
+  .button:hover {
+    background-color: $second-color;
+    border: $border-width-1-vw solid $third-color;
+    color: $third-color;
+  }
+
+  .button:active {
+    transform:translateY(2px);
+  }
 
 }
