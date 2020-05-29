@@ -1,3 +1,0 @@
-*.css linguist-detectable=false
-*.html linguist-detectable=false
-js/bundle.js linguist-detectable=true
